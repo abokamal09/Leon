@@ -131,3 +131,30 @@ body {
 .header .links ul li:not(:last-child) a {
   border-bottom: 1px solid #ddd;
 }
+
+.hero {
+  background-image: url(../images/hero-img.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+
+.hero .intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+  font-size: 19px;
+  color: aliceblue;
+}
+
+.hero h1 {
+  margin: 0;
+  padding: 0;
+  color: #10cab7;
+  font-size: 50px;
+  font-weight: bold;
+}
