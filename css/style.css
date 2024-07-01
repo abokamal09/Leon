@@ -175,10 +175,10 @@ body {
   gap: 40px;
 }
 
-.features .feat:not(:first-child) {
+/* .features .feat:not(:first-child) {
   padding-left: 20px;
   border-left: 2px solid #797979;
-}
+} */
 
 .features .feat h3 {
   margin: 30px;
@@ -247,4 +247,36 @@ i {
 
 .serv h3 {
   margin: 0 0 20px;
+}
+
+.serv p {
+  color: #444;
+  font-weight: 300;
+}
+
+.services-content img {
+  width: 260px;
+}
+
+.services-content .image {
+  text-align: center;
+  position: relative;
+}
+
+.services-content .image::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: calc(100% + 100px);
+  z-index: -1;
+  background-color: #2c4755;
+  right: 0;
+  top: -50px;
+}
+
+@media (max-width: 1280px) {
+  .services-content img,
+  .services-content .image::before {
+    display: none;
+  }
 }
