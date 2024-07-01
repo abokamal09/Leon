@@ -172,11 +172,13 @@ body {
 .features .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
 }
 
-/* .features .feat:not(:first-child) {
-  border-left: 2px solid #333;
-} */
+.features .feat:not(:first-child) {
+  padding-left: 20px;
+  border-left: 2px solid #797979;
+}
 
 .features .feat h3 {
   margin: 30px;
@@ -214,4 +216,35 @@ i {
 
 .services {
   padding: 60px;
+}
+
+.services .services-content {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.services-content .col .serv {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .services-content .col .serv {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.serv i {
+  flex-basis: 60px;
+}
+
+.serv .text {
+  flex: 1;
+}
+
+.serv h3 {
+  margin: 0 0 20px;
 }
