@@ -202,3 +202,16 @@ i {
   color: #797979;
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 60px;
+  }
+
+  .section-title + p {
+    margin-top: -20px;
+  }
+}
+
+.services {
+  padding: 60px;
+}
