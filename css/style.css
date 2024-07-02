@@ -158,7 +158,7 @@ body {
 }
 
 .features {
-  padding: 40px;
+  padding: 40px 0;
   text-align: center;
   background-color: #eee;
   font-size: 17px;
@@ -210,7 +210,7 @@ i {
 }
 
 .services {
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .services .services-content {
@@ -218,6 +218,7 @@ i {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
+  justify-content: center;
 }
 
 .services-content .col .serv {
