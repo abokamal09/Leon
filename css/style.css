@@ -160,7 +160,7 @@ body {
 .features {
   padding: 40px 0;
   text-align: center;
-  background-color: #eee;
+  background-color: #f6f6f6;
   font-size: 17px;
 }
 
@@ -210,14 +210,14 @@ i {
 }
 
 .services {
-  padding: 60px 0;
+  padding: 60px 0 60px 0;
 }
 
 .services .services-content {
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -250,10 +250,6 @@ i {
   font-weight: 300;
 }
 
-.services-content img {
-  width: 260px;
-}
-
 .services-content .image {
   text-align: center;
   position: relative;
@@ -270,9 +266,46 @@ i {
   top: -50px;
 }
 
+.services-content img {
+  width: 260px;
+}
+
 @media (max-width: 1280px) {
-  .services-content img,
-  .services-content .image::before {
+  .image-column {
     display: none;
   }
+}
+
+.portfolio {
+  padding: 60px 0;
+  background-color: #f6f6f6;
+}
+
+.portfolio .container .cards {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+.portfolio .card {
+  background-color: white;
+}
+
+.portfolio .cards .card .info {
+  padding: 20px;
+}
+
+.portfolio .cards .card .info h3 {
+  margin: 0;
+}
+
+.portfolio .cards .card .info p {
+  margin-bottom: 0;
+  color: #777;
+}
+
+.portfolio .container .cards img {
+  width: 100%;
 }
