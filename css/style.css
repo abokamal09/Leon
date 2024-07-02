@@ -189,6 +189,7 @@ i {
   font-size: 100px;
   margin: 0;
   font-weight: 800;
+  letter-spacing: -3px;
   text-align: center;
 }
 
@@ -248,6 +249,7 @@ i {
 .serv p {
   color: #444;
   font-weight: 300;
+  line-height: 1.6;
 }
 
 .services-content .image {
